@@ -5,6 +5,12 @@
 
 ### Video Resources
 ---
+https://www.youtube.com/watch?v=apGV9Kg7ics
+
+[![Video](https://i.ytimg.com/vi/8JJ101D3knE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRswDXtA7kU4j5CzS-CA7ASq-UWQ)](https://www.youtube.com/watch?v=8JJ101D3knE)
+
+[![Video](https://i.ytimg.com/vi/apGV9Kg7ics/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcIfFNdnIirblOELKtVDLe5d5BSA)](https://www.youtube.com/watch?v=apGV9Kg7ics)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8JJ101D3knE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/apGV9Kg7ics" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
