@@ -23,4 +23,24 @@ The control plane manages the overall state of the cluster, including scheduling
 The worker nodes are responsible for running the containers and executing the tasks assigned by the control plane. Each worker node runs a container runtime, such as Docker, and a Kubernetes agent called kubelet, which communicates with the control plane to receive instructions.
 
 
+---
+## Learning Resources
 
+* Video Resources:
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;[![Video](https://i.ytimg.com/vi/X48VuDVv0do/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBn-pasvS3smBq8Cswq0tq8KRrPEg)](https://www.youtube.com/watch?v=X48VuDVv0do)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[![Video](https://i.ytimg.com/vi/KVBON1lA9N8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAR3DzWBOpEDcBg-YyF1dLtKxTB-Q)](https://www.youtube.com/watch?v=KVBON1lA9N8)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[![Video](https://i.ytimg.com/vi/d6WC5n9G_sM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlggwg_nQsm31FlQtfWQ0yF8ASKQ)](https://www.youtube.com/watch?v=d6WC5n9G_sM&t=17s)
+
+---
+* Documentations:
+
+[Kubernetes Official Docs](https://kubernetes.io/docs/home/)
+
+[Google cloud](https://cloud.google.com/learn/what-is-kubernetes)
+
+[Red Hat](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
