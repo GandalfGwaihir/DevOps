@@ -16,19 +16,35 @@
    <style>
     /* Dark mode styles */
    .dark {
-      background-color: black!important;
+      background-color: #35363a!important;
       color: white!important;
     }
 
       .dark aside {
-      background-color: black;
+      background-color: #35363a;
       color: white;
+    }
+      /* Styles for the floating button */
+    #darkModeBtn{
+      position: fixed;
+      z-index: 9999;
+      background-color: #333;
+      color: white;
+      margin-right:-10px;
+      border:1px solid white;
+      width:35px;
+      height:35px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 100%;
+      right: 20px;
+      bottom: 20px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div id="app"></div>
-  <button id="darkModeBtn">Toggle Dark Mode</button>
+  <button id="darkModeBtn"><img width="25" height="25" style="margin-top:2px;margin-left:-1px;" src="https://img.icons8.com/fluency/48/day-and-night.png" alt="day-and-night"/></button>
   <script>
     window.$docsify = {
       name: '',
