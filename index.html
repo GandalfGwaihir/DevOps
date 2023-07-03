@@ -13,9 +13,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="icon" href="https://img.freepik.com/free-vector/flat-design-devops-illustration_23-2149364438.jpg?w=2000">
+   <style>
+    /* Dark mode styles */
+    .dark {
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
+  <button id="darkModeBtn">Toggle Dark Mode</button>
   <script>
     window.$docsify = {
       name: '',
@@ -24,5 +32,30 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+   
+
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      const isDarkMode = body.classList.toggle('dark');
+
+      // Store the dark mode preference in localStorage
+      localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    // Add click event listener to the button
+    const darkModeBtn = document.getElementById('darkModeBtn');
+    darkModeBtn.addEventListener('click', toggleDarkMode);
+
+    // Apply the initial dark mode preference
+    const storedDarkMode = localStorage.getItem('darkMode');
+
+    if (storedDarkMode === 'true') {
+      toggleDarkMode();
+    }
+  </script>
+
+  
 </body>
 </html>
