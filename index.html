@@ -13,9 +13,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="icon" href="https://img.freepik.com/free-vector/flat-design-devops-illustration_23-2149364438.jpg?w=2000">
+   <style>
+    /* Dark mode styles */
+   .dark {
+      background-color: #35363a!important;
+      color: white!important;
+    }
+
+      .dark aside {
+      background-color: #35363a;
+      color: white;
+    }
+      /* Styles for the floating button */
+    #darkModeBtn{
+      position: fixed;
+      z-index: 9999;
+      background-color: #333;
+      color: white;
+      margin-right:-10px;
+      border:1px solid white;
+      width:35px;
+      height:35px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 100%;
+      right: 20px;
+      bottom: 20px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
+  <button id="darkModeBtn"><img width="25" height="25" style="margin-top:2px;margin-left:-1px;" src="https://img.icons8.com/fluency/48/day-and-night.png" alt="day-and-night"/></button>
   <script>
     window.$docsify = {
       name: '',
@@ -24,5 +53,30 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+   
+
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      const isDarkMode = body.classList.toggle('dark');
+
+      // Store the dark mode preference in localStorage
+      localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    // Add click event listener to the button
+    const darkModeBtn = document.getElementById('darkModeBtn');
+    darkModeBtn.addEventListener('click', toggleDarkMode);
+
+    // Apply the initial dark mode preference
+    const storedDarkMode = localStorage.getItem('darkMode');
+
+    if (storedDarkMode === 'true') {
+      toggleDarkMode();
+    }
+  </script>
+
+  
 </body>
 </html>
